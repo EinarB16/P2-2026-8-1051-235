@@ -1,4 +1,4 @@
-// 1. Cálculo del cubo de un número
+// 1. Cálculo del cubo de un número.
 function calcularCubo() {
     // Obtiene el valor ingresado en el campo NumCubo y lo convierte a número decimal
     const valorInput = document.getElementById("NumCubo").value.trim();
@@ -18,7 +18,7 @@ function calcularCubo() {
     resultado.textContent = `El cubo de ${numero} es: ${cubo}`;
 }
 
-// 2. Cálculo del área de un triángulo
+// 2. Cálculo del área de un triángulo.
 function calcularArea() {
     // Obtiene los valores de base y altura desde los campos donde se deben ingresar los datos
     const baseInput = document.getElementById("NumBase").value.trim();
@@ -42,7 +42,7 @@ function calcularArea() {
     resultado.textContent = `El área en metros cuadrados del triángulo es: ${areaFormateada}`;
 }
 
-// 3. Cálculo de promedio de calificaciones
+// 3. Cálculo de promedio de calificaciones.
 function CalcularProm() {
     // Obtiene el nombre del estudiante y las tres calificaciones
     const nombre = document.getElementById("Estudiante").value.trim();
@@ -78,7 +78,7 @@ function CalcularProm() {
 }
 
 
-// 4. Comparación de dos valores
+// 4. Comparación de dos valores.
 
 function compararValores() {
     // Obtiene los dos números ingresados por el usuario
