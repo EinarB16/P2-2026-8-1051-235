@@ -1,0 +1,95 @@
+*
+/* Estilos generales para este proyecto*/
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos general del cuerpo*/
+body {
+    background-color: #eff6f3;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilos para el primer titulo */
+.header-principal {
+    text-align: center;
+    background-color: #ebac2f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/*Aqui es para el tamaño de cada seccion que creamos desde el HTML y poder dividirlos de manera uniforme*/
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tarjeta h2 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/*Esta parte es la completementación del contenedor porque le da mas diseño a lo que hay dentro de los contenedores*/
+.tarjeta {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 4px solid #ba9028;
+}
+
+/*Eso modifica un poco el visual de lo campos donde se ingresar los valores*/
+.tarjeta input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9abab;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+/*Esto moficia el boton que nos muestras el resultado poniendole un mejor diseño*/
+.tarjeta button {
+    background-color: #dbad36;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.resultado {
+    font-weight: 600;
+    color: #0a0921;
+    margin-top: 5px;
+    min-height: 24px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #ffffff;
+}
+
+/*Este es el pie de pagina un poco mas centreado*/
+.footer-principal {
+    text-align: center;
+    margin-top: 40px;
+    color: #000000;
+}

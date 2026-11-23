@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora de Valores</title>
+</head>
+    <body>
+        <header class="header-principal">
+            <h1>Parcial 2 </h1>
+            <p>Coloca los valores en los campos de entrada y haz clic en los botones para realizar los cálculos.</p>
+        </header>
+
+        <main class="contenedor">
+            <!-- Tarjeta 1.- El Cubo de un número -->
+            <!-- En esta parte se colocan los campos en html para que el usuario pueda ingresar los datos solicitados para calcular el cubo, se divive en secciones de tarjetas-->
+            <section class="tarjeta">
+                <h2>1. El Cubo de un número </h2>
+                <input type="number" id="NumCubo" placeholder="Escribir un número">
+                <button onclick="calcularCubo()">Calcular Cubo</button>
+                <p id="resultadoCubo" class="resultado"></p>
+            </section>
+
+            <!-- Tarjeta 2: calcular el área de un triángulo -->
+            <!-- En esta parte se colocan los campos en html para que el usuario pueda ingresar los datos solicitados para calcular el area, se divive en secciones de tarjetas-->
+            <section class="tarjeta">
+                <h2>2. calcular el área de un triángulo</h2>
+                <input type="number" id="NumBase" placeholder="Escribe la Base">
+                <input type="number" id="NumAltura" placeholder="Escribe la Altura">
+                <button onclick="calcularArea()">Calcular Area</button>
+                <p id="resultadoCuadrado" class="resultado"></p>
+            </section>
+
+            <!-- Tarjeta 3: Promedio de calificaciones -->
+            <!-- En esta parte se colocan los campos en html para que el usuario pueda ingresar los datos solicitados para calcular su promedio de calificaciones y mostrar su nombre, se divive en secciones de tarjetas-->
+            <section class="tarjeta">
+                <h2>3. Calcular promedio de calificaciones</h2>
+                <input type="text" id="Estudiante" placeholder="Escriba su nombre">
+                <input type="number" id="Cali1" placeholder="Calificación 1">
+                <input type="number" id="Cali2" placeholder="Calificación 2">
+                <input type="number" id="Cali3" placeholder="Calificación 3">
+                <button onclick="CalcularProm()"> Calcular Promedio</button>
+                <p id="resultadoPromedio" class="resultado"></p>
+            </section>
+
+            <!-- Tarjeta 4: Comparación de dos valores -->
+            <!-- En esta parte se colocan los campos en html para que el usuario pueda ingresar los datos solicitados realizar la comparacións, se divive en secciones de tarjetas-->
+            <section class="tarjeta">
+                <h2>4. Comparación de dos valores</h2>
+                <input type="number" id="comp1" placeholder="Número 1">
+                <input type="number" id="comp2" placeholder="Número 2">
+                <button onclick="compararValores()">Comparar valores</button>
+                <p id="resultadoComparacion" class="resultado"></p>
+            </section>
+        </main>
+
+        <footer class="footer-principal" text-align ="center" >
+            <p>Universidad Tecnológica de Panamá - Facultad de Ingeniería de Sistemas Computacionales</p>
+        </footer>
+        
+    </body>
+</html>
