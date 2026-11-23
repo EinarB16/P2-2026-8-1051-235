@@ -81,31 +81,27 @@ function CalcularProm() {
 // 4. Comparación de dos valores.
 
 function compararValores() {
-    // Obtiene los dos números ingresados por el usuario
-    const num1Input = document.getElementById("comp1").value.trim();
-    const num2Input = document.getElementById("comp2").value.trim();
-    const resultado = document.getElementById("resultadoComparacion");
+    let n1 = parseFloat(document.getElementById("comp1").value);
+    let n2 = parseFloat(document.getElementById("comp2").value);
+    let resultadoP = document.getElementById("resultadoComparacion");
 
-    const num1 = parseFloat(num1Input);
-    const num2 = parseFloat(num2Input);
-
-    // Valida que ambos campos contengan números válidos
-    if (num1Input === "" || num2Input === "" || isNaN(num1) || isNaN(num2)) {
-        resultado.textContent = "Por favor, ingresa dos números válidos para comparar.";
+    if (isNaN(n1) || isNaN(n2)) {
+        resultadoP.textContent = "Por favor, ingresa ambos números.";
         return;
     }
 
-    // Evalúa si son iguales o cuál es mayor y cuál es menor
-    if (num1 === num2) {
-        resultado.textContent = `Ambos números son iguales (${num1}) y su diferencia es 0.`;
+    let mayor, menor;
+    if (n1 > n2) {
+        mayor = n1;
+        menor = n2;
+    } else if (n2 > n1) {
+        mayor = n2;
+        menor = n1;
+    } else {
+        resultadoP.textContent = `Ambos números son iguales (${n1}). Su diferencia es 0.`;
         return;
     }
 
-    const mayor = num1 > num2 ? num1 : num2;
-    const menor = num1 < num2 ? num1 : num2;
-    const diferencia = mayor - menor;
-    const diferenciaFormateada = Number.isInteger(diferencia) ? diferencia : diferencia.toFixed(2);
-
-    // Muestra mayor, menor y diferencia
-    resultado.textContent = `El número mayor es ${mayor}, el menor es ${menor}, y su diferencia es ${diferenciaFormateada}.`;
+    let diferencia = Math.abs(mayor - menor);
+    resultadoP.textContent = `El número mayor es ${mayor}, el menor es ${menor}, y su diferencia es ${diferencia}.`;
 }
